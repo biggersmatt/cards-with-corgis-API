@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
 
-const promptSchema = new mongoose.Schema({
-  prompt: {
+const partySchema = new mongoose.Schema({
+  name: {
     type: String,
     trim: true,
   },
-  author: String,
-  change: Boolean,
+  password: String,
 })
 
-const Prompt = mongoose.model('Prompt', promptSchema);
+const Party = mongoose.model('Party', partySchema);
 
-module.exports = Prompt;
+module.exports = Party;

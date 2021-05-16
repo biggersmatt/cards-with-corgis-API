@@ -1,13 +1,14 @@
 const mongoose = require('mongoose');
 
-const partyNameSchema = new mongoose.Schema({
-  partyName: {
+const cardSchema = new mongoose.Schema({
+  prompt: {
     type: String,
     trim: true,
   },
-  password: String,
+  author: String,
+  discard: Boolean,
 })
 
-const PartyName = mongoose.model('PartyName', partyNameSchema);
+const Card = mongoose.model('Card', cardSchema);
 
-module.exports = PartyName;
+module.exports = Card;
