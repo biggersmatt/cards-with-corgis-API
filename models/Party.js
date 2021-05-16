@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const partySchema = new mongoose.Schema({
   name: {
@@ -8,6 +8,6 @@ const partySchema = new mongoose.Schema({
   password: String,
 })
 
-const Party = mongoose.model('Party', partySchema);
+const Party = mongoose.model("Party", partySchema);
 
 module.exports = Party;

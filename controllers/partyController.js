@@ -8,7 +8,7 @@ const index = (req, res) => {
 }
 
 const create = (req, res) => {
-  db.Endcap.create(req.body, (err, newParty) => {
+  db.Party.create(req.body, (err, newParty) => {
     if(err) console.log(err);
     res.json({newParty});
   })
