@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const partySchema = new mongoose.Schema({
-  name: {
+  partyName: {
     type: String,
     trim: true,
   },
