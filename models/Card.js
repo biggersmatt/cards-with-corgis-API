@@ -7,6 +7,7 @@ const cardSchema = new mongoose.Schema({
   },
   author: String,
   discard: Boolean,
+  partyId: String,
 })
 
 const Card = mongoose.model('Card', cardSchema);
