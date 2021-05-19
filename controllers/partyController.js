@@ -8,7 +8,6 @@ const index = (req, res) => {
 }
 
 const create = (req, res) => {
-  console.log(req.body)
   db.Party.create(req.body, (err, newParty) => {
     if(err) console.log(err);
     res.json({newParty});
