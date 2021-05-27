@@ -1,7 +1,7 @@
+require("dotenv").config({ path: "./config.env"});
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors")
-require('dotenv').config();
 const app = express();
 
 const PORT = process.env.PORT || "https://pacific-mesa-89997.herokuapp.com/";
