@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-// const connectionString = process.env.MONGODB_URI;
-const connectionString = "mongodb://localhost:27017/cards-with-corgis";
+// const connectionString = "mongodb://localhost:27017/cards-with-corgis";
+const connectionString = process.env.MONGODB_URI;
 const options = {
   useNewUrlParser: true,
   useFindAndModify: false,
