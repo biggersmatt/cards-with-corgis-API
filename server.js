@@ -16,7 +16,6 @@ app.get("/", (req, res) => {
   res.send("<h1>Cards With Corgis API</h1>")
 })
 
-
 app.use("/party", routes.party);
 app.use("/card", routes.card);
 
