@@ -4,7 +4,7 @@ const cors = require("cors")
 require('dotenv').config();
 const app = express();
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || "https://pacific-mesa-89997.herokuapp.com/";
 const routes = require("./routes");
 
 app.use(bodyParser.json());
